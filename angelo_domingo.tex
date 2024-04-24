@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Template By : Sourabh Bajaj
+% Owner of Resume: Angelo Dominic Domingo
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://jellodomingo.github.io/}{\Large Angelo Dominic Domingo}} & Email : \href{mailto:domingoangelodominic@gmail.com}{domingoangelodominic@gmail.com}\\
+  \href{https://jellodomingo.github.io/}{https://jellodomingo.github.io/} & Mobile : \href{tel:+19258763067}{+1-925-876-3067} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Irvine}{Irvine, CA}
+      {Bachelor of Science in Computer Science}{Sept. 2016 -- Jan. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ultra/Mint Mobile}{Costa Mesa, CA / Remote}
+      {Software Engineer}{Feb 2022 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {Maintained and developed frontend features in React and Next.js for Ultra and Mint websites, using libraries such as Redux and React Context.}
+        \resumeItem
+	{Converted vanilla React applications to Next.js 13 and above.}	
+       \resumeItem
+	{Refactored existing JavaScript classes to Typescript functional components.}
+       \resumeItem
+	{Implemented backend security features on Express Node.js APIs}
+       \resumeItem
+	{Created and maintained e2e tests using Cypress and Postman for mock data, and components using Jest. And utilized tests on CI/CD pipelines to maintain code stability.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Unisys}{Irvine, CA - Remote}
+      {Security Software Engineer}{Jan 2014 - Oct 2016}
+      \resumeItemListStart
+	 \resumeItem
+	{Developed UI and backend features for the company's Electron-based augmented knowledge discovery tool in Javascript, Node.js, and React.}
+	 \resumeItem	
+	{Refactored and updated existing Javascript codebase to Typescript.}
+	 \resumeItem	
+	{Developed and maintained automated tests using Spectron and WebDriverIO to prove stability and functionality. }
+	 \resumeItem	
+	{Utilized Jenkins to run test suites and builds.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mercury Insurance,}{Brea, CA - Remote}
+      {Java Developer}{May 2021 - Sept. 2021}
+      \resumeItemListStart
+	\resumeItem
+	{Developed SQL script generator in Java to expedite agency data onboarding  and aid in the ETL process.}
+	\resumeItem
+	{Resolved production database tickets through SQL scripts and data updates.}
+	\resumeItem
+	{Maintained and updated agency commission application in Java, Javascript, and HTML.}
+	\resumeItem
+	{Utilized Jenkins to build and deploy application code to development, QA, and production environments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {anna}{Boston, MA - Remote}
+      {Full-Stack Engineer}{Feb 2021 - May 2021}
+      \resumeItemListStart
+	\resumeItem
+	{Maintained and designed components for React frontend, using a combination of Redux and React's Context API for state management.}
+	\resumeItem
+	{Utilized Firebase Realtime Database to update status of customer kiosks in real time.}
+	\resumeItem
+	{Built CI/CD pipelines hosted on AWS using Docker, CodePipeline, and ECS to deploy the company's backend services.}
+	\resumeItem
+	{Engineered communication protocol between vending machines and backend services using websockets and C\#.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DealerClick}{Newport Beach, CA }
+      {Full-Stack Engineer}{May 2020 - Jan 2021}
+      \resumeItemListStart
+	\resumeItem
+	{Maintained and developed web application features using Java and Java Server Faces that will eventually replace the company's dated VB6 automotive DMS system software.}
+	\resumeItem
+	{Optimized website load times by upgrading servers from an outdated version of Glassfish to Wildfly.}
+	\resumeItem
+	{Rewrote existing SQL queries to allow for faster website data load times. }
+	\resumeItem
+	{Refactored Java API Service from a J2EE monolithic system to Spring Boot microservice architecture.}
+	\resumeItem
+	{Developed React Native application that allowed for offline and online scanning of inventory barcodes.}
+	\resumeItem
+	{Spearheaded an overhaul of the dated VB6 automotive DMS system software to a web application using a Spring Boot backend and React.js frontend.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Javascript/Typescript, SQL, Java, Python, }
+      \hfill
+      \textbf{Technologies}{: Git, React, Nextjs, Node, AWS, Spring Boot, MySQL, Cypress, Jest, Docker, Postman}
+    }
+  \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
